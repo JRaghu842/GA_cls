@@ -1,7 +1,7 @@
 name : Print Node Version
 on : push
 jobs : 
-      print-version:
+      print-version :
           runs-on : ubuntu-latest
           steps : 
                 - name : Install Node.js
