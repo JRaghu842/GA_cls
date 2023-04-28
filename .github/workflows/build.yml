@@ -1,8 +1,12 @@
+name : Print Node Version
 on : push
 jobs : 
-      first-job:
+      print-version:
           runs-on : ubuntu-latest
           steps : 
+                - name : Install Node.js
                 - uses : actions/checkout@v3
-                - run : npx eslint index.js
-                - run : node index.js
+                  with :
+                    node-version: '14.x'
+                - name : Print Node Version  
+                  run : node -v 
