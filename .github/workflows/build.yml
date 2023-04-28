@@ -1,6 +1,6 @@
 on : push
 jobs : 
       first-job:
-          runs-n : ubuntu-latest
+          runs-0n : ubuntu-latest
           steps : 
                 - run : node --version
